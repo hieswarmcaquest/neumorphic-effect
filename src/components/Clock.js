@@ -11,7 +11,7 @@ const Clock = () => {
     const triggerShimmer = () => {
       const randomIndex = Math.floor(Math.random() * 4); // Randomly select one of the 4 buttons
       setShimmerIndex(randomIndex);
-      setTimeout(() => setShimmerIndex(null), 1500); // Reset after the animation duration
+      setTimeout(() => setShimmerIndex(null), 4000); // Reset after 2 cycles of the 2s pulse animation
     };
 
     const interval = setInterval(triggerShimmer, Math.random() * 5000 + 2000); // Random interval between 2s and 7s
