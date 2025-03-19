@@ -1,0 +1,223 @@
+.statistic {
+    width: 300px;
+    height: 500px; /* Adjusted to fit the bottom nav */
+    padding: 20px;
+    background: #f5f7fa; /* Creamy background */
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05), -10px -10px 20px rgba(255, 255, 255, 0.9); /* Neumorphic shadow */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle border for depth */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .statistic-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-arrows {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .arrow {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .arrow.left,
+  .arrow.right {
+    background: #f0f0f0;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+  }
+  
+  .dots {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .statistic-header h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .period {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #666;
+    background: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+  }
+  
+  .period .arrow.right {
+    margin-left: 5px;
+  }
+  
+  .progress-circle {
+    width: 180px; /* Increased size to match the original */
+    height: 180px;
+    margin: 30px auto;
+    background: conic-gradient(#ff9f43 0% 52%, #e0e0e0 52% 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+  }
+  
+  .inner-circle {
+    width: 140px; /* Adjusted to match the original */
+    height: 140px;
+    background: #f5f7fa; /* Creamy background */
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px; /* Larger font size to match the original */
+    font-weight: bold;
+    color: #ff9f43;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+    position: relative;
+  }
+  
+  .arrow-up {
+    position: absolute;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+    background: #ffffff; /* White background for the arrow */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(255, 255, 255, 0.5);
+  }
+  
+  .arrow-icon {
+    font-size: 14px;
+    color: #ff6f61; /* Red color for the arrow */
+  }
+  
+  .stat-item {
+    display: flex;
+    align-items: center;
+    background: #ffebcc; /* Pleasant light peach color */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(255, 255, 255, 0.9); /* Enhanced neumorphic shadow */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle border for depth */
+  }
+  
+  .stat-icon {
+    margin-right: 10px;
+  }
+  
+  .coffee-icon {
+    width: 24px;
+    height: 24px;
+    background: #8b4513; /* Brown color for the coffee cup */
+    border-radius: 50%;
+  }
+  
+  .stat-details {
+    flex-grow: 1;
+  }
+  
+  .stat-details span:first-child {
+    display: block;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .stat-details span:last-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .stat-percentage {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff9f43;
+  }
+  
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  
+  .nav-button {
+    font-size: 24px;
+    color: #666;
+    background: #f0f0f0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(255, 255, 255, 0.5);
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Add pointer cursor for interactivity */
+    transition: all 0.2s ease; /* Smooth transition for hover and active states */
+    position: relative; /* For positioning the shiny effect */
+    overflow: hidden; /* Ensure the shiny effect stays within the button */
+  }
+  
+  .nav-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.5),
+      transparent
+    ); /* Gradient for the shiny effect */
+    animation: shine 2s infinite; /* Apply the shine animation */
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
+  .nav-button:hover {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15), -3px -3px 6px rgba(255, 255, 255, 0.7); /* Slightly stronger shadow on hover */
+  }
+  
+  .nav-button.active {
+    background: #e0e0e0;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.5); /* Inset shadow for active state */
+  }
+  
+  .nav-button.active::before {
+    animation: shine 2s infinite; /* Ensure the shine effect applies to the active button as well */
+  }
+  
+  .nav-button:focus {
+    outline: none; /* Remove default focus outline */
+  }

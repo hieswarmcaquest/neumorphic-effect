@@ -1,0 +1,81 @@
+.card {
+    width: 300px;
+    padding: 20px;
+    background: #f5f7fa; /* Creamy background */
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05), -10px -10px 20px rgba(255, 255, 255, 0.9); /* Neumorphic shadow */
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle border for depth */
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-chip {
+    width: 40px;
+    height: 30px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+  }
+  
+  .card-number {
+    margin: 20px 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #333;
+  }
+  
+  .card-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-expiry {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .card-logo .logo-circle {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(145deg, #ff6f61, #ff9f43);
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(255, 255, 255, 0.5);
+  }
+  
+  .balance-section {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .balance-section h3 {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+  }
+  
+  .balance-section p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .credit-limit {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #999;
+  }
